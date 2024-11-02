@@ -5,7 +5,9 @@
   "main": "index.tsx",
   "scripts": {
     "start": "webpack serve --mode=development --open",
-    "build": "webpack --mode=production"
+    "build": "webpack --mode=production",
+    "storybook": "storybook dev -p 6006",
+    "build-storybook": "storybook build"
   },
   "repository": {
     "type": "git",
@@ -32,12 +34,22 @@
     "@babel/preset-env": "^7.26.0",
     "@babel/preset-react": "^7.25.9",
     "@babel/preset-typescript": "^7.26.0",
+    "@chromatic-com/storybook": "^3.2.2",
+    "@storybook/addon-essentials": "^8.4.1",
+    "@storybook/addon-interactions": "^8.4.1",
+    "@storybook/addon-onboarding": "^8.4.1",
+    "@storybook/addon-webpack5-compiler-swc": "^1.0.5",
+    "@storybook/blocks": "^8.4.1",
+    "@storybook/react": "^8.4.1",
+    "@storybook/react-webpack5": "^8.4.1",
+    "@storybook/test": "^8.4.1",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.8.6",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "babel-loader": "^9.2.1",
     "html-webpack-plugin": "^5.6.3",
+    "storybook": "^8.4.1",
     "ts-loader": "^9.5.1",
     "typescript": "^5.6.3",
     "webpack": "^5.96.1",
