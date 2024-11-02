@@ -1,0 +1,47 @@
+{
+  "name": "bhanu-components",
+  "version": "1.0.0",
+  "description": "This project contains components that are built using typescript, reactjs",
+  "main": "index.tsx",
+  "scripts": {
+    "start": "webpack serve --mode=development --open",
+    "build": "webpack --mode=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/bhanu0240/bhanu-components.git"
+  },
+  "keywords": [
+    "Storybook",
+    "Reusable-components",
+    "Reactjs",
+    "Typescript"
+  ],
+  "author": "bhanureddy0240@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bhanu0240/bhanu-components/issues"
+  },
+  "homepage": "https://github.com/bhanu0240/bhanu-components#readme",
+  "dependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.25.9",
+    "@babel/preset-typescript": "^7.26.0",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.8.6",
+    "@types/react": "^18.3.12",
+    "@types/react-dom": "^18.3.1",
+    "babel-loader": "^9.2.1",
+    "html-webpack-plugin": "^5.6.3",
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.6.3",
+    "webpack": "^5.96.1",
+    "webpack-cli": "^5.1.4",
+    "webpack-dev-server": "^5.1.0"
+  }
+}
