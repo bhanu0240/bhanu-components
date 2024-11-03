@@ -5,7 +5,7 @@ import { LoginComponent } from "./login-component";
 
 // More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: "Example/Crazy-Login",
+  title: "Bhanu-Components/Crazy-Login",
   component: LoginComponent,
   parameters: {
     // Optional parameter to center the component in the Canvas. More info: https://storybook.js.org/docs/configure/story-layout

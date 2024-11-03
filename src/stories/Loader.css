@@ -1,0 +1,26 @@
+.text-animation {
+    display: flex;
+}
+
+.animated-char {
+    display: inline-block;
+    font-size: 24px;
+    font-weight: bold;
+    animation: upAndDown 0.6s ease-in-out infinite;
+}
+
+@keyframes upAndDown {
+    0% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-10px);
+        /* Move up */
+    }
+
+    100% {
+        transform: translateY(0);
+        /* Move back down */
+    }
+}
