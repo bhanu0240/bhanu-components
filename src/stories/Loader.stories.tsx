@@ -14,6 +14,8 @@ const meta = {
   // More on argTypes: https://storybook.js.org/docs/api/argtypes
   argTypes: {
     text: { control: "text" },
+    color: { control: "text" },
+    className: { control: "text" },
   },
 } satisfies Meta<typeof Loader>;
 
@@ -24,5 +26,7 @@ type Story = StoryObj<typeof meta>;
 export const BaseLoader: Story = {
   args: {
     text: "Bhanu",
+    color: "red",
+    className: "custom-className",
   },
 };
