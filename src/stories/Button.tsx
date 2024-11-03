@@ -11,8 +11,10 @@ export interface ButtonProps {
   size?: 'small' | 'medium' | 'large';
   /** Button contents */
   label: string;
+  className?: string;
   /** Optional click handler */
-  onClick?: () => void;
+  onClick?: (e: React.MouseEvent<HTMLElement>) => void;
+  onMouseEnter?: (e: React.MouseEvent<HTMLElement>) => void;
 }
 
 /** Primary UI component for user interaction */
@@ -21,15 +23,16 @@ export const Button = ({
   size = 'medium',
   backgroundColor,
   label,
+  className,
   ...props
 }: ButtonProps) => {
   const mode = primary ? 'storybook-button--primary' : 'storybook-button--secondary';
   return (
     <button
       type="button"
-      className={['storybook-button', `storybook-button--${size}`, mode].join(' ')}
       style={{ backgroundColor }}
       {...props}
+      className={['storybook-button', `storybook-button--${size}`, mode, className].join(' ')}
     >
       {label}
     </button>

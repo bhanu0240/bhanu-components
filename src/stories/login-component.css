@@ -1,0 +1,51 @@
+.textfield {
+    padding: 10px 0px;
+    margin: 10px 0px;
+
+    input {
+        border-radius: 10px;
+        padding: 10px;
+        width: 360px
+    }
+
+    input.invalid {
+        outline: 1px solid red;
+        border: 1px solid red;
+    }
+}
+
+.login-container {
+    min-width: 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    animation: moveRight 0.3s ease forwards;
+}
+
+.left {
+    animation: moveLeft 0.3s ease forwards;
+}
+
+@keyframes moveRight {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(300px);
+    }
+}
+
+@keyframes moveLeft {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-300px);
+    }
+}
